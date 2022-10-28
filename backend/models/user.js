@@ -19,11 +19,13 @@ module.exports = (sequelize, DataTypes) => {
     },
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
-    email: DataTypes.STRING
-  }, {
+    email: DataTypes.STRING,
+    passwordDigest: DataTypes.STRING
+  }, 
+
     sequelize,
-    underscored: true,
-    modelName: 'User',
-  });
+    underscored, true,
+    modelName, 'User',
+  )
   return User;
 };
